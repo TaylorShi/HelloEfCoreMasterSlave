@@ -1,13 +1,13 @@
 ﻿using MediatR;
-using System.Collections.Generic;
-using Tesla.Referral.Domain.Aggregates;
+using Tesla.Framework.Core;
+using Tesla.Referral.DataContract.ReferralCode.DTO;
 
 namespace Tesla.Referral.Application.Queries
 {
     /// <summary>
     /// 查询引荐命令定义
     /// </summary>
-    public class QueryReferralCommand : IRequest<List<ReferralCode>>
+    public class QueryReferralCommand : IRequest<PagedList<ReferralCodeDto>>
     {
         /// <summary>
         /// 引荐ID
@@ -23,5 +23,15 @@ namespace Tesla.Referral.Application.Queries
         /// 引荐代码
         /// </summary>
         public string Code { get; set; }
+
+        /// <summary>
+        /// 分页页码
+        /// </summary>
+        public int PageIndex { get; set; }
+
+        /// <summary>
+        /// 分页大小
+        /// </summary>
+        public int PageSize { get; set; }
     }
 }

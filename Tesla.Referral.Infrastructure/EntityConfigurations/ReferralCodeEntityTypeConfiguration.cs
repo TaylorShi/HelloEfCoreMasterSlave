@@ -16,6 +16,7 @@ namespace Tesla.Referral.Infrastructure.EntityConfigurations
         {
             builder.HasKey(p => p.Id);
             builder.ToTable("referralcode");
+            builder.HasIndex(p => p.Code);
             builder.Property(p => p.Name).HasMaxLength(120);
             builder.Property(p => p.Code).HasMaxLength(200);
         }

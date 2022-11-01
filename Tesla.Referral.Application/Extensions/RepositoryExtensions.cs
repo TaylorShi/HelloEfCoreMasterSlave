@@ -9,7 +9,7 @@ namespace Tesla.Referral.Application.Extensions
     public static class RepositoryExtensions
     {
         /// <summary>
-        /// 添加仓储
+        /// 添加所有仓储服务
         /// </summary>
         /// <param name="services"></param>
         /// <returns></returns>

@@ -16,7 +16,7 @@ namespace Tesla.Referral.Application.Commands
         /// <summary>
         /// 引荐代码仓储
         /// </summary>
-        readonly IReferralCodeRepository _referralCodeRepository;
+        private readonly IReferralCodeRepository _referralCodeRepository;
 
         /// <summary>
         /// 构造函数
