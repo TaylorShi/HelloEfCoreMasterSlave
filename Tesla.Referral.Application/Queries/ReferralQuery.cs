@@ -5,9 +5,9 @@ using Tesla.Referral.DataContract.ReferralCode.DTO;
 namespace Tesla.Referral.Application.Queries
 {
     /// <summary>
-    /// 查询引荐命令定义
+    /// 引荐查询定义
     /// </summary>
-    public class QueryReferralCommand : IRequest<PagedList<ReferralCodeDto>>
+    public class ReferralQuery : IRequest<PagedList<ReferralCodeDto>>
     {
         /// <summary>
         /// 引荐ID

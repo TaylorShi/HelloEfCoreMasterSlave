@@ -12,9 +12,9 @@ using Tesla.Referral.Infrastructure.Contexts;
 namespace Tesla.Referral.Application.Queries
 {
     /// <summary>
-    /// 查询引荐命令处理
+    /// 引荐查询处理
     /// </summary>
-    public class QueryReferralCommandHandler : IRequestHandler<QueryReferralCommand, PagedList<ReferralCodeDto>>
+    public class ReferralQueryHandler : IRequestHandler<ReferralQuery, PagedList<ReferralCodeDto>>
     {
         private readonly ReferralSlaveContext _referralSlaveContext;
         private readonly IConfigurationProvider _configurationProvider;
@@ -23,7 +23,7 @@ namespace Tesla.Referral.Application.Queries
         /// 构造函数
         /// </summary>
         /// <param name="referralSlaveContext"></param>
-        public QueryReferralCommandHandler(ReferralSlaveContext referralSlaveContext, IConfigurationProvider configurationProvider)
+        public ReferralQueryHandler(ReferralSlaveContext referralSlaveContext, IConfigurationProvider configurationProvider)
         {
             _referralSlaveContext = referralSlaveContext;
             _configurationProvider = configurationProvider;
@@ -35,7 +35,7 @@ namespace Tesla.Referral.Application.Queries
         /// <param name="request"></param>
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
-        public async Task<PagedList<ReferralCodeDto>> Handle(QueryReferralCommand request, CancellationToken cancellationToken)
+        public async Task<PagedList<ReferralCodeDto>> Handle(ReferralQuery request, CancellationToken cancellationToken)
         {
             IQueryable<ReferralCode> query = _referralSlaveContext.ReferralCodes
                 .WhereIf(request.Id > 0, x => x.Id == request.Id)

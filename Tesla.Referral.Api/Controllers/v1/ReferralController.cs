@@ -70,7 +70,7 @@ namespace Tesla.Referral.Api.Controllers.v1
         /// <param name="cmd"></param>
         /// <returns></returns>
         [HttpGet]
-        public async Task<PagedList<ReferralCodeDto>> Query([FromQuery]QueryReferralCommand cmd)
+        public async Task<PagedList<ReferralCodeDto>> Query([FromQuery]ReferralQuery cmd)
         {
             // 发送查询引荐的命令
             return await _mediator.Send(cmd, HttpContext.RequestAborted);
