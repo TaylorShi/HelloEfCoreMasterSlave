@@ -1,5 +1,5 @@
 ﻿using System;
-using Tesla.Referral.Domain.Aggregates;
+using Tesla.Referral.Domain.AggregatesModel.ReferralAggregate;
 
 namespace Tesla.Console.Reflection
 {
