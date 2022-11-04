@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Tesla.Framework.Domain.Abstractions;
 
-namespace Tesla.Referral.Domain.Aggregates
+namespace Tesla.Referral.Domain.AggregatesModel.ReferralAggregate
 {
     /// <summary>
     /// 引荐代码领域模型

@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Tesla.Referral.Domain.Aggregates;
+using Tesla.Referral.Domain.AggregatesModel.ReferralAggregate;
 
 namespace Tesla.Referral.Infrastructure.EntityConfigurations
 {
@@ -14,8 +11,10 @@ namespace Tesla.Referral.Infrastructure.EntityConfigurations
     {
         public void Configure(EntityTypeBuilder<ReferralCode> builder)
         {
-            builder.HasKey(p => p.Id);
             builder.ToTable("referralcode");
+            builder.HasKey(p => p.Id);
+            // 忽略领域事件这个字段
+            builder.Ignore(b => b.DomainEvents);
             builder.HasIndex(p => p.Code);
             builder.Property(p => p.Name).HasMaxLength(120);
             builder.Property(p => p.Code).HasMaxLength(200);

@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Tesla.Framework.Infrastructure.Core.Contexts;
-using Tesla.Referral.Domain.Aggregates;
+using Tesla.Referral.Domain.AggregatesModel.ReferralAggregate;
 using Tesla.Referral.Infrastructure.EntityConfigurations;
 
 namespace Tesla.Referral.Infrastructure.Contexts

@@ -25,15 +25,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tesla.Referral.Domain", "Te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tesla.Referral.Application", "Tesla.Referral.Application\Tesla.Referral.Application.csproj", "{66C3DD07-76CB-4588-BC6E-5C5E709EE0F7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Api", "4.Api", "{E50904CC-2E76-43A8-8472-B95F42C4898C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Interface", "4.Interface", "{E50904CC-2E76-43A8-8472-B95F42C4898C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Test", "5.Test", "{74D12C26-7D56-42BB-9ABB-730CC2FC1DAB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tesla.Referral.DataContract", "Tesla.Referral.DataContract\Tesla.Referral.DataContract.csproj", "{95C55AE1-C4BA-4BE4-B2E2-83C07E7292F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tesla.Console.Reflection", "Tesla.Console.Reflection\Tesla.Console.Reflection.csproj", "{C177F0F8-F4F0-4E46-B865-D87A8BFEBF6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tesla.Console.Reflection", "Tesla.Console.Reflection\Tesla.Console.Reflection.csproj", "{C177F0F8-F4F0-4E46-B865-D87A8BFEBF6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tesla.Console.AccessibilityLevels", "Tesla.Console.AccessibilityLevels\Tesla.Console.AccessibilityLevels.csproj", "{9A7541D8-B9AB-4416-AC6E-6CF3BEEE534D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tesla.Console.AccessibilityLevels", "Tesla.Console.AccessibilityLevels\Tesla.Console.AccessibilityLevels.csproj", "{9A7541D8-B9AB-4416-AC6E-6CF3BEEE534D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

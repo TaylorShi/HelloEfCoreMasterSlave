@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Tesla.Referral.Domain.Aggregates;
+using Tesla.Referral.Domain.AggregatesModel.ReferralAggregate;
 using Tesla.Referral.Infrastructure.EntityConfigurations;
 
 namespace Tesla.Referral.Infrastructure.Contexts

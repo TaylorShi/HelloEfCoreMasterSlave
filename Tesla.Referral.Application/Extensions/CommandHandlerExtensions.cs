@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using Tesla.Referral.Application.Commands;
-using Tesla.Referral.Domain.Aggregates;
+using Tesla.Referral.Domain.AggregatesModel.ReferralAggregate;
 using Tesla.Referral.Infrastructure.Contexts;
 
 namespace Tesla.Referral.Application.Extensions

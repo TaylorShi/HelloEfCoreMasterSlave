@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Tesla.Framework.Infrastructure.Core.Repositorys;
-using Tesla.Referral.Domain.Aggregates;
+using Tesla.Referral.Domain.AggregatesModel.ReferralAggregate;
 using Tesla.Referral.Infrastructure.Contexts;
 
 namespace Tesla.Referral.Infrastructure.Repositories

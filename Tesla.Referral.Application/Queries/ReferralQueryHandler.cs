@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Tesla.Framework.Core;
 using Tesla.Framework.Infrastructure.Core.Extensions;
 using Tesla.Referral.DataContract.ReferralCode.DTO;
-using Tesla.Referral.Domain.Aggregates;
+using Tesla.Referral.Domain.AggregatesModel.ReferralAggregate;
 using Tesla.Referral.Infrastructure.Contexts;
 
 namespace Tesla.Referral.Application.Queries

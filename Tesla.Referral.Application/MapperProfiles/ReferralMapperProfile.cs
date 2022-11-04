@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Tesla.Referral.DataContract.ReferralCode.DTO;
-using Tesla.Referral.Domain.Aggregates;
+using Tesla.Referral.Domain.AggregatesModel.ReferralAggregate;
 
 namespace Tesla.Referral.Application.MapperProfiles
 {
