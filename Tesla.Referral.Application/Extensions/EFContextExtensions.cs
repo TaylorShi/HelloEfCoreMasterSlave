@@ -25,7 +25,7 @@ namespace Tesla.Referral.Application.Extensions
             });
 
             // 添加引荐SlaveContext
-            services.AddDbContext<ReferralSlaveContext>(optionsAction =>
+            services.AddDbContextPool<ReferralSlaveContext>(optionsAction =>
             {
                 optionsAction.UseMySql(slaveConnectionString);
             });
